@@ -1,12 +1,10 @@
 CACHE MANIFEST 
-# v1.0
+# v1.3
 
-75x.js
 app2usb.js
 app-dumper.js
 backup.js
-binloader.html
-c-code.js
+blob.js
 disable-aslr.js
 disable-updates.js
 enable-browser.js
@@ -20,10 +18,15 @@ int64.js
 jb.js
 kernel-clock.js
 kernel-dumper.js
+loader-750.js
+loader-751.js
+loader-755.js
 mira.js
-mira750.js
-mira751.js
-mira755.js
+mira-75x.html
+mira-750.js
+mira-751.js
+mira-755.js
+netcat.js
 payload.html
 ps4.js
 restore.js
