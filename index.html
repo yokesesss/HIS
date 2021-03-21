@@ -64,6 +64,7 @@ document.cookie = 'kex=1';
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
 <div style="text-align:center">
 <button class="btn btn-main" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
+<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira2b()> MIRA-Beta </button>
 <br>
 <h1 style="font-size:20px;text-align:center;">Payloads</h1>
 <button class="btn btn-main" onmouseover="todex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
@@ -92,6 +93,9 @@ document.cookie = 'kex=1';
 <script>
 function mainpayload1(){
 document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
+}
+function mainpayload2(){
+document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x + Spoof (Includes Temporary Fix for CE-30391-6)";
 }
 function todex(){
 document.getElementById("msgs").innerHTML = "Enable Some Debugging Functions Available on TestKit";
@@ -155,102 +159,95 @@ function load_mira75x(){
         link.href = 'mira-75x.html';
         link.click();
 }
-function load_mira751(){
+function load_mira2b(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'mira-751.html#p0=loader-751.js&p1=mira-751.js';
-        link.click();
-}
-function load_mira755(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'mira-755.html#p0=loader-755.js&p1=mira-755.js';
+        link.href = 'payload.html#f=mira2b.js';
         link.click();
 }
 function load_todex(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=todex.js';
+        link.href = 'payload.html#f=todex.js';
         link.click();
 }
 function load_dumper(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=app-dumper.js';
+        link.href = 'payload.html#f=app-dumper.js';
         link.click();
 }
 function load_ftp(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=ftp.js';
+        link.href = 'payload.html#f=ftp.js';
         link.click();
 }
 function load_app2usb(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=app2usb.js';
+        link.href = 'payload.html#f=app2usb.js';
         link.click();
 }
 function load_enablebUpdates(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=enable-updates.js';
+        link.href = 'payload.html#f=enable-updates.js';
         link.click();
 }
 function load_disableUpdates(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=disable-updates.js';
+        link.href = 'payload.html#f=disable-updates.js';
         link.click();
 }
 function load_dbackup(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=backup.js';
+        link.href = 'payload.html#f=backup.js';
         link.click();
 }
 function load_dbrestore(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=restore.js';
+        link.href = 'payload.html#f=restore.js';
         link.click();
 }
 function load_historyBlocker(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=history-blocker.js';
+        link.href = 'payload.html#f=history-blocker.js';
         link.click();
 }
 function load_ebrowser(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=enable-browser.js';
+        link.href = 'payload.html#f=enable-browser.js';
         link.click();
 }
 function load_kernelDump(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=kernel-dumper.js';
+        link.href = 'payload.html#f=kernel-dumper.js';
         link.click();
 }
 function load_kernelClock(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=kernel-clock.js';
+        link.href = 'payload.html#f=kernel-clock.js';
         link.click();
 }
 function load_binloader(){
@@ -264,21 +261,21 @@ function load_disbAslr(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=disable-aslr.js';
+        link.href = 'payload.html#f=disable-aslr.js';
         link.click();
 }
 function load_rifRen(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=rif-renamer.js';
+        link.href = 'payload.html#f=rif-renamer.js';
         link.click();
 }
 function load_fanCtr(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#p0=mira.js&p1=fan-control.js';
+        link.href = 'payload.html#f=fan-control.js';
         link.click();
 }
 </script>
