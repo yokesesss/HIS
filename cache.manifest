@@ -11,6 +11,7 @@ enable-browser.js
 enable-updates.js
 fan-control.js
 ftp.js
+goldhen_755.js
 history-blocker.js
 img.jpg
 index.html
@@ -30,6 +31,7 @@ mira-755.js
 netcat.js
 payload.html
 ps4.js
+ps4debug.js
 restore.js
 rif-renamer.js
 todex.js

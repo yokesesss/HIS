@@ -63,8 +63,10 @@ document.cookie = 'kex=1';
 <br>
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
 <div style="text-align:center">
-<button class="btn btn-main" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
-<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira2b()> MIRA-Beta </button>
+<button class="btn btn-main" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen()> GoldHEN </button>
+<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
+<button class="btn btn-main" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_mira2b()> MIRA-Beta </button>
+<button class="btn btn-main" onmouseover="mainpayload4()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
 <br>
 <h1 style="font-size:20px;text-align:center;">Payloads</h1>
 <button class="btn btn-main" onmouseover="todex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
@@ -82,7 +84,7 @@ document.cookie = 'kex=1';
 <button class="btn btn-main" onmouseover="kernelDump()" onmouseout="pagetitle()" onclick=load_kernelDump()> Kernel Dumper </button>
 <button class="btn btn-main" onmouseover="kernelClock()" onmouseout="pagetitle()" onclick=load_kernelClock()> Kernel Clock </button>
 <br>
-<button class="btn btn-main" onmouseover="binloader()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
+<button class="btn btn-main" onmouseover="ps4debug()" onmouseout="pagetitle()" onclick=load_ps4debug()> PS4 Debug </button>
 <button class="btn btn-main" onmouseover="disbaslr()" onmouseout="pagetitle()" onclick=load_disbAslr()> Disable ASLR </button>
 <button class="btn btn-main" onmouseover="rifrenamer()" onmouseout="pagetitle()" onclick=load_rifRen()> RIF Renamer </button>
 <button class="btn btn-main" onmouseover="fancontrol()" onmouseout="pagetitle()" onclick=load_fanCtr()> Fan Control </button>&nbsp
@@ -92,10 +94,16 @@ document.cookie = 'kex=1';
 </div>
 <script>
 function mainpayload1(){
-document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
+document.getElementById("msgs").innerHTML = "GoldHEN for All Firmwares 7.5x";
 }
 function mainpayload2(){
+document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
+}
+function mainpayload3(){
 document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x + Spoof (Includes Temporary Fix for CE-30391-6)";
+}
+function mainpayload4(){
+document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9021";
 }
 function todex(){
 document.getElementById("msgs").innerHTML = "Enable Some Debugging Functions Available on TestKit";
@@ -133,11 +141,8 @@ document.getElementById("msgs").innerHTML = "Dump a Conole Kernel to USB Drive";
 function kernelClock(){
 document.getElementById("msgs").innerHTML = "Change the Time for the Console Kernel Clock";
 }
-function binloader(){
-document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9020";
-}
-function binloader(){
-document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9020";
+function ps4debug(){
+document.getElementById("msgs").innerHTML = "Activate Your User Account Offline";
 }
 function disbaslr(){
 document.getElementById("msgs").innerHTML = "Disables the ASLR (Address space layout randomization)";
@@ -152,6 +157,13 @@ function pagetitle(){
 document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.3 by GamerHack";
 }
 
+function load_goldhen(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=goldhen_755.js';
+        link.click();
+}
 function load_mira75x(){
 
   var link = document.createElement('a');
@@ -250,11 +262,11 @@ function load_kernelClock(){
         link.href = 'payload.html#f=kernel-clock.js';
         link.click();
 }
-function load_binloader(){
+function load_ps4debug(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html';
+        link.href = 'payload.html#f=ps4debug.js';
         link.click();
 }
 function load_disbAslr(){
@@ -276,6 +288,13 @@ function load_fanCtr(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'payload.html#f=fan-control.js';
+        link.click();
+}
+function load_binloader(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html';
         link.click();
 }
 </script>
