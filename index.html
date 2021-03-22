@@ -51,6 +51,15 @@ background-color: #0058b1;
 color: white;
     border-radius: 8px;
 }
+.btn-web {
+background-color: #076300;
+color: white;
+border-radius: 8px;
+}
+.btn-web:hover {
+background-color: #18891b;
+color: white;
+border-radius: 8px;
 </style>
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.getElementById="display:none";window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
@@ -87,8 +96,11 @@ document.cookie = 'kex=1';
 <button class="btn btn-main" onmouseover="ps4debug()" onmouseout="pagetitle()" onclick=load_ps4debug()> PS4 Debug </button>
 <button class="btn btn-main" onmouseover="disbaslr()" onmouseout="pagetitle()" onclick=load_disbAslr()> Disable ASLR </button>
 <button class="btn btn-main" onmouseover="rifrenamer()" onmouseout="pagetitle()" onclick=load_rifRen()> RIF Renamer </button>
-<button class="btn btn-main" onmouseover="fancontrol()" onmouseout="pagetitle()" onclick=load_fanCtr()> Fan Control </button>&nbsp
-<hr style="margin-top: 131px;">
+<button class="btn btn-main" onmouseover="fancontrol()" onmouseout="pagetitle()" onclick=load_fanCtr()> Fan Control </button>
+<br>
+<button class="btn btn-main" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
+<button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>
+<hr style="margin-top: 62px;">
 <h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;"></style>ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/_AlAzif" style="color:#f31414;">@_AlAzif</a>&nbsp&nbsp<a style="color:white;"></style>And to all the people who keep the scene alive day after day</a>&nbsp&nbsp</h1>
 <br>
 </div>
@@ -156,6 +168,12 @@ document.getElementById("msgs").innerHTML = "Modify PS4 FAN Speed (Beta)";
 function pagetitle(){
 document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.3 by GamerHack";
 }
+function webrte(){
+document.getElementById("msgs").innerHTML = "Required to Activate Cheats Through the PS4 Trainer Website";
+}
+function ps4trainer(){
+document.getElementById("msgs").innerHTML = "Link to PS4 Trainer Website (Follow Instructions There)";
+}
 
 function load_goldhen(){
 
@@ -176,6 +194,13 @@ function load_mira2b(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'payload.html#f=mira2b.js';
+        link.click();
+}
+function load_binloader(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html';
         link.click();
 }
 function load_todex(){
@@ -290,11 +315,18 @@ function load_fanCtr(){
         link.href = 'payload.html#f=fan-control.js';
         link.click();
 }
-function load_binloader(){
+function load_webrte(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html';
+        link.href = 'payload.html#f=webrte.js';
+        link.click();
+}
+function load_ps4trainer(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'http://ps4trainer.com/Trainer/index.html';
         link.click();
 }
 </script>
