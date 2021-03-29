@@ -3,6 +3,9 @@ CACHE MANIFEST
 
 app2usb.js
 app-dumper.js
+arabic-guy100.js
+arabic-guy127.js
+arabic-guy132.js
 backup.js
 blob.js
 disable-aslr.js
@@ -12,13 +15,16 @@ enable-updates.js
 fan-control.js
 ftp.js
 goldhen_755.js
+gtav-mods.html
 history-blocker.js
+idu.js
 img.jpg
 index.html
 int64.js
 jb.js
 kernel-clock.js
 kernel-dumper.js
+lamance132.js
 loader-750.js
 loader-751.js
 loader-755.js
@@ -28,6 +34,9 @@ mira-75x.html
 mira-750.js
 mira-751.js
 mira-755.js
+native-caller100.js
+native-caller127.js
+native-caller132.js
 netcat.js
 payload.html
 ps4.js

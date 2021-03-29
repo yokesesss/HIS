@@ -60,6 +60,17 @@ border-radius: 8px;
 background-color: #18891b;
 color: white;
 border-radius: 8px;
+}
+.btn-page {
+background-color: #b10000;
+color: white;
+border-radius: 8px;
+}
+.btn-page:hover {
+background-color: #f31414;
+color: white;
+border-radius: 8px;
+}
 </style>
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.getElementById="display:none";window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
@@ -98,8 +109,10 @@ document.cookie = 'kex=1';
 <button class="btn btn-main" onmouseover="rifrenamer()" onmouseout="pagetitle()" onclick=load_rifRen()> RIF Renamer </button>
 <button class="btn btn-main" onmouseover="fancontrol()" onmouseout="pagetitle()" onclick=load_fanCtr()> Fan Control </button>
 <br>
+<button class="btn btn-main" onmouseover="exitidu()" onmouseout="pagetitle()" onclick=load_exitidu()> Exit IDU </button>
+<button class="btn btn-main" onmouseover="gtavmods()" onmouseout="pagetitle()" onclick=load_gtavmods()> GTA V Mods </button>
 <button class="btn btn-main" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
-<button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>&nbsp
+<button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>
 <hr style="margin-top: 62px;">
 <h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;"></style>ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/_AlAzif" style="color:#f31414;">@_AlAzif</a>&nbsp&nbsp<a style="color:white;"></style>And to all the people who keep the scene alive day after day</a>&nbsp&nbsp</h1>
 <br>
@@ -165,14 +178,20 @@ document.getElementById("msgs").innerHTML = "Renames 'fake' RIFs to 'free' RIFs"
 function fancontrol(){
 document.getElementById("msgs").innerHTML = "Modify PS4 FAN Speed (Beta)";
 }
-function pagetitle(){
-document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.3 by GamerHack";
+function exitidu(){
+document.getElementById("msgs").innerHTML = "Disable IDU Mode, if you have activated it by mistake";
+}
+function gtavmods(){
+document.getElementById("msgs").innerHTML = "Choose Desired Cheats for GTA V (Click Here to Load Subpage)";
 }
 function webrte(){
 document.getElementById("msgs").innerHTML = "Required to Activate Cheats Through the PS4 Trainer Website";
 }
 function ps4trainer(){
 document.getElementById("msgs").innerHTML = "PS4 Trainer Website (Follow Instructions There)";
+}
+function pagetitle(){
+document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.3 by GamerHack";
 }
 
 function load_goldhen(){
@@ -315,6 +334,20 @@ function load_fanCtr(){
         link.href = 'payload.html#f=fan-control.js';
         link.click();
 }
+function load_exitidu(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=idu.js';
+        link.click();
+}
+function load_gtavmods(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtav-mods.html';
+        link.click();
+}
 function load_webrte(){
 
   var link = document.createElement('a');
@@ -327,6 +360,13 @@ function load_ps4trainer(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'http://ps4trainer.com/Trainer/index.html';
+        link.click();
+}
+function load_morepls(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'more-plds.html';
         link.click();
 }
 </script>
