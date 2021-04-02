@@ -103,16 +103,16 @@ document.cookie = 'kex=1';
 <button class="btn btn-main" onmouseover="ebrowser()" onmouseout="pagetitle()" onclick=load_ebrowser()> Enable Browser </button>
 <button class="btn btn-main" onmouseover="kernelDump()" onmouseout="pagetitle()" onclick=load_kernelDump()> Kernel Dumper </button>
 <button class="btn btn-main" onmouseover="kernelClock()" onmouseout="pagetitle()" onclick=load_kernelClock()> Kernel Clock </button>
-<br>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <button class="btn btn-main" onmouseover="ps4debug()" onmouseout="pagetitle()" onclick=load_ps4debug()> PS4 Debug </button>
 <button class="btn btn-main" onmouseover="disbaslr()" onmouseout="pagetitle()" onclick=load_disbAslr()> Disable ASLR </button>
 <button class="btn btn-main" onmouseover="rifrenamer()" onmouseout="pagetitle()" onclick=load_rifRen()> RIF Renamer </button>
-<button class="btn btn-main" onmouseover="fancontrol()" onmouseout="pagetitle()" onclick=load_fanCtr()> Fan Control </button>
+<button class="btn btn-main" onmouseover="fanthreshold()" onmouseout="pagetitle()"  style="margin-right:10px" onclick=load_fanthreshold()> Fan Threshold </button><select id="tempC"></select>&#176;C
 <br>
 <button class="btn btn-main" onmouseover="exitidu()" onmouseout="pagetitle()" onclick=load_exitidu()> Exit IDU </button>
 <button class="btn btn-main" onmouseover="gtavmods()" onmouseout="pagetitle()" onclick=load_gtavmods()> GTA V Mods </button>
 <button class="btn btn-main" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
-<button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>
+<button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>&nbsp
 <hr style="margin-top: 62px;">
 <h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;"></style>ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/_AlAzif" style="color:#f31414;">@_AlAzif</a>&nbsp&nbsp<a style="color:white;"></style>And to all the people who keep the scene alive day after day</a>&nbsp&nbsp</h1>
 <br>
@@ -175,8 +175,8 @@ document.getElementById("msgs").innerHTML = "Disables the ASLR (Address space la
 function rifrenamer(){
 document.getElementById("msgs").innerHTML = "Renames 'fake' RIFs to 'free' RIFs";
 }
-function fancontrol(){
-document.getElementById("msgs").innerHTML = "Modify PS4 FAN Speed (Beta)";
+function fanthreshold(){
+document.getElementById("msgs").innerHTML = "Modify PS4 FAN Speed";
 }
 function exitidu(){
 document.getElementById("msgs").innerHTML = "Disable IDU Mode, if you have activated it by mistake";
@@ -193,6 +193,15 @@ document.getElementById("msgs").innerHTML = "PS4 Trainer Website (Follow Instruc
 function pagetitle(){
 document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.3 by GamerHack";
 }
+
+for(var i=50; i<=75; i=i+5){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
 
 function load_goldhen(){
 
@@ -327,11 +336,11 @@ function load_rifRen(){
         link.href = 'payload.html#f=rif-renamer.js';
         link.click();
 }
-function load_fanCtr(){
+function load_fanthreshold(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload.html#f=fan-control.js';
+        link.href = "payload.html#f=fan-threshold"+tempC.value+".js";
         link.click();
 }
 function load_exitidu(){
