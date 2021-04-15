@@ -9,12 +9,7 @@ disable-aslr.js
 disable-updates.js
 enable-browser.js
 enable-updates.js
-fan-threshold50.js
-fan-threshold55.js
-fan-threshold60.js
-fan-threshold65.js
-fan-threshold70.js
-fan-threshold75.js
+fanThreshold.js
 frontend.js
 ftp.js
 goldhen.html

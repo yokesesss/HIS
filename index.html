@@ -190,7 +190,7 @@ function pagetitle(){
 document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.4 by GamerHack";
 }
 
-for(var i=50; i<=75; i=i+5){
+for(var i=40; i<=79; i++){
     var select = document.getElementById("tempC");
     var option = document.createElement("OPTION");
 	select.options.add(option);
@@ -329,7 +329,7 @@ function load_fanthreshold(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = "payload.html#f=fan-threshold"+tempC.value+".js";
+        link.href = 'payload.html#f=fanThreshold.js';localStorage.setItem('fanthreshold', tempC.value);
         link.click();
 }
 function load_webact(){
