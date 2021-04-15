@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest"><head>
-<title>PS4 7.50 - 7.55 Host v1.3 by GamerHack</title>
+<title>PS4 7.50 - 7.55 Host v1.4 by GamerHack</title>
 <style>
 html, body {
 background-image: url('img.jpg');
@@ -78,14 +78,13 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 document.cookie = 'kex=1';
 </script>
 </head>
-<h1 id=msgs>PS4 7.50 - 7.55 Host v1.3 by GamerHack</h1>
+<h1 id=msgs>PS4 7.50 - 7.55 Host v1.4 by GamerHack</h1>
 <hr>
 <br>
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
 <div style="text-align:center">
 <button class="btn btn-main" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen()> GoldHEN v1.1 </button>
 <button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
-<button class="btn btn-main" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_mira2b()> MIRA-Beta </button>
 <button class="btn btn-main" onmouseover="mainpayload4()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
 <br>
 <h1 style="font-size:20px;text-align:center;">Payloads</h1>
@@ -109,8 +108,8 @@ document.cookie = 'kex=1';
 <button class="btn btn-main" onmouseover="rifrenamer()" onmouseout="pagetitle()" onclick=load_rifRen()> RIF Renamer </button>
 <button class="btn btn-main" onmouseover="fanthreshold()" onmouseout="pagetitle()"  style="margin-right:10px" onclick=load_fanthreshold()> Fan Threshold </button><select id="tempC"></select>&#176;C
 <br>
+<button class="btn btn-main" onmouseover="webact()" onmouseout="pagetitle()" onclick=load_webact()> Web-Activator </button>
 <button class="btn btn-main" onmouseover="exitidu()" onmouseout="pagetitle()" onclick=load_exitidu()> Exit IDU </button>
-<button class="btn btn-main" onmouseover="gtavmods()" onmouseout="pagetitle()" onclick=load_gtavmods()> GTA V Mods </button>
 <button class="btn btn-main" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
 <button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>&nbsp
 <hr style="margin-top: 62px;">
@@ -123,9 +122,6 @@ document.getElementById("msgs").innerHTML = "GoldHEN v1.1 for All Firmwares 7.5x
 }
 function mainpayload2(){
 document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
-}
-function mainpayload3(){
-document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x + Spoof (Includes Temporary Fix for CE-30391-6)";
 }
 function mainpayload4(){
 document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9021";
@@ -178,11 +174,11 @@ document.getElementById("msgs").innerHTML = "Renames 'fake' RIFs to 'free' RIFs"
 function fanthreshold(){
 document.getElementById("msgs").innerHTML = "Modify PS4 FAN Speed";
 }
+function webact(){
+document.getElementById("msgs").innerHTML = "Activate Your User Account from the Console Browser";
+}
 function exitidu(){
 document.getElementById("msgs").innerHTML = "Disable IDU Mode, if you have activated it by mistake";
-}
-function gtavmods(){
-document.getElementById("msgs").innerHTML = "Choose Desired Cheats for GTA V (Click Here to Load Subpage)";
 }
 function webrte(){
 document.getElementById("msgs").innerHTML = "Required to Activate Cheats Through the PS4 Trainer Website";
@@ -191,7 +187,7 @@ function ps4trainer(){
 document.getElementById("msgs").innerHTML = "PS4 Trainer Website (Follow Instructions There)";
 }
 function pagetitle(){
-document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.3 by GamerHack";
+document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.4 by GamerHack";
 }
 
 for(var i=50; i<=75; i=i+5){
@@ -215,13 +211,6 @@ function load_mira75x(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'mira-75x.html';
-        link.click();
-}
-function load_mira2b(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'payload.html#f=mira2b.js';
         link.click();
 }
 function load_binloader(){
@@ -343,18 +332,18 @@ function load_fanthreshold(){
         link.href = "payload.html#f=fan-threshold"+tempC.value+".js";
         link.click();
 }
+function load_webact(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'web-activator.html';
+        link.click();
+}
 function load_exitidu(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'payload.html#f=idu.js';
-        link.click();
-}
-function load_gtavmods(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'gtav-mods.html';
         link.click();
 }
 function load_webrte(){
