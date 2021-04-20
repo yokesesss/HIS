@@ -84,8 +84,9 @@ document.cookie = 'kex=1';
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
 <div style="text-align:center">
 <button class="btn btn-main" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen()> GoldHEN v1.1 </button>
-<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
-<button class="btn btn-main" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
+<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_henb()> HEN v2.1.3b </button>
+<button class="btn btn-main" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
+<button class="btn btn-main" onmouseover="mainpayload4()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
 <br>
 <h1 style="font-size:20px;text-align:center;">Payloads</h1>
 <button class="btn btn-main" onmouseover="todex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
@@ -121,9 +122,12 @@ function mainpayload1(){
 document.getElementById("msgs").innerHTML = "GoldHEN v1.1 for All Firmwares 7.5x (Includes Temporary Fix for CE-30391-6)";
 }
 function mainpayload2(){
-document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
+document.getElementById("msgs").innerHTML = "HEN v2.1.3b for All Firmwares 7.5x";
 }
 function mainpayload3(){
+document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
+}
+function mainpayload4(){
 document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9021";
 }
 function todex(){
@@ -204,6 +208,13 @@ function load_goldhen(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'goldhen.html';
+        link.click();
+}
+function load_henb(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=hen213b.js';
         link.click();
 }
 function load_mira75x(){
