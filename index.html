@@ -21,55 +21,33 @@ text-align:center;
 color:white;
 }
 .btn {
-width: 262px;
+background-color: #003263;
+color: white;
+width: 260px;
 height: 49px;
-padding-top: 10px;
-padding-bottom: 13px;
+padding-bottom: 5px;
 text-align: center;
-text-decoration: none;
-display: inline-block;
 font-size: 20px;
-margin-top: 15px;
-margin-bottom: 5px;
-margin-left: 15px;
-margin-right: 5px;
+margin-top: 8px;
+margin-bottom: 8px;
+margin-left: 8px;
+margin-right: 8px;
 border-bottom-width: 0px;
 border-right-width: 0px;
 border-top-width: 0px;
 border-left-width: 0px;
--webkit-transition-duration: 0.4s;
 transition-duration: 0.4s;
 cursor: pointer;
-}
-.btn-main {
-background-color: #003263;
-color: white;
 border-radius: 8px;
 }
-.btn-main:hover {
+.btn:hover {
 background-color: #0058b1;
-color: white;
-    border-radius: 8px;
 }
 .btn-web {
 background-color: #076300;
-color: white;
-border-radius: 8px;
 }
 .btn-web:hover {
 background-color: #18891b;
-color: white;
-border-radius: 8px;
-}
-.btn-page {
-background-color: #b10000;
-color: white;
-border-radius: 8px;
-}
-.btn-page:hover {
-background-color: #f31414;
-color: white;
-border-radius: 8px;
 }
 </style>
 <script>
@@ -78,43 +56,45 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 document.cookie = 'kex=1';
 </script>
 </head>
-<h1 id=msgs>PS4 7.50 - 7.55 Host v1.4 by GamerHack</h1>
+<h1 id=msgs>PS4 7.50 - 7.55 Host v1.5 by GamerHack</h1>
 <hr>
 <br>
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
 <div style="text-align:center">
-<button class="btn btn-main" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen()> GoldHEN v1.1 </button>
-<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_henb()> HEN v2.1.3b </button>
-<button class="btn btn-main" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
-<button class="btn btn-main" onmouseover="mainpayload4()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
+<button class="btn" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen()> GoldHEN v1.1 </button>
+<button class="btn" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
+<button class="btn" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
 <br>
 <h1 style="font-size:20px;text-align:center;">Payloads</h1>
-<button class="btn btn-main" onmouseover="todex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
-<button class="btn btn-main" onmouseover="dumper()" onmouseout="pagetitle()" onclick=load_dumper()> Dumper </button>
-<button class="btn btn-main" onmouseover="ftp()" onmouseout="pagetitle()" onclick=load_ftp()> FTP </button>
-<button class="btn btn-main" onmouseover="app2usb()" onmouseout="pagetitle()" onclick=load_app2usb()> App2USB </button>
+<button class="btn" onmouseover="todex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
+<button class="btn" onmouseover="dumper()" onmouseout="pagetitle()" onclick=load_dumper()> Dumper </button>
+<button class="btn" onmouseover="ftp()" onmouseout="pagetitle()" onclick=load_ftp()> FTP </button>
+<button class="btn" onmouseover="app2usb()" onmouseout="pagetitle()" onclick=load_app2usb()> App2USB </button>
 <br>
-<button class="btn btn-main" onmouseover="enableUpdates()" onmouseout="pagetitle()" onclick=load_enablebUpdates()> Enable Updates </button>
-<button class="btn btn-main" onmouseover="disableUpdates()" onmouseout="pagetitle()" onclick=load_disableUpdates()> Disable Updates </button>
-<button class="btn btn-main" onmouseover="dbackup()" onmouseout="pagetitle()" onclick=load_dbackup()> DB Backup </button>
-<button class="btn btn-main" onmouseover="dbrestore()" onmouseout="pagetitle()" onclick=load_dbrestore()> DB Restore </button>
+<button class="btn" onmouseover="enableUpdates()" onmouseout="pagetitle()" onclick=load_enablebUpdates()> Enable Updates </button>
+<button class="btn" onmouseover="disableUpdates()" onmouseout="pagetitle()" onclick=load_disableUpdates()> Disable Updates </button>
+<button class="btn" onmouseover="dbackup()" onmouseout="pagetitle()" onclick=load_dbackup()> DB Backup </button>
+<button class="btn" onmouseover="dbrestore()" onmouseout="pagetitle()" onclick=load_dbrestore()> DB Restore </button>
 <br>
-<button class="btn btn-main" onmouseover="historyBlocker()" onmouseout="pagetitle()" onclick=load_historyBlocker()> History Blocker </button>
-<button class="btn btn-main" onmouseover="ebrowser()" onmouseout="pagetitle()" onclick=load_ebrowser()> Enable Browser </button>
-<button class="btn btn-main" onmouseover="kernelDump()" onmouseout="pagetitle()" onclick=load_kernelDump()> Kernel Dumper </button>
-<button class="btn btn-main" onmouseover="kernelClock()" onmouseout="pagetitle()" onclick=load_kernelClock()> Kernel Clock </button>
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<button class="btn btn-main" onmouseover="ps4debug()" onmouseout="pagetitle()" onclick=load_ps4debug()> PS4 Debug </button>
-<button class="btn btn-main" onmouseover="disbaslr()" onmouseout="pagetitle()" onclick=load_disbAslr()> Disable ASLR </button>
-<button class="btn btn-main" onmouseover="rifrenamer()" onmouseout="pagetitle()" onclick=load_rifRen()> RIF Renamer </button>
+<button class="btn" onmouseover="historyBlocker()" onmouseout="pagetitle()" onclick=load_historyBlocker()> History Blocker </button>
+<button class="btn" onmouseover="ebrowser()" onmouseout="pagetitle()" onclick=load_ebrowser()> Enable Browser </button>
+<button class="btn" onmouseover="kernelDump()" onmouseout="pagetitle()" onclick=load_kernelDump()> Kernel Dumper </button>
+<button class="btn" onmouseover="kernelClock()" onmouseout="pagetitle()" onclick=load_kernelClock()> Kernel Clock </button>
+<br>
+<button class="btn" style="margin-left: 77px" onmouseover="ps4debug()" onmouseout="pagetitle()" onclick=load_ps4debug()> PS4 Debug </button>
+<button class="btn" onmouseover="disbaslr()" onmouseout="pagetitle()" onclick=load_disbAslr()> Disable ASLR </button>
+<button class="btn" onmouseover="rifrenamer()" onmouseout="pagetitle()" onclick=load_rifRen()> RIF Renamer </button>
 <button class="btn btn-main" onmouseover="fanthreshold()" onmouseout="pagetitle()"  style="margin-right:10px" onclick=load_fanthreshold()> Fan Threshold </button><select id="tempC"></select>&#176;C
 <br>
-<button class="btn btn-main" onmouseover="webact()" onmouseout="pagetitle()" onclick=load_webact()> Web-Activator </button>
-<button class="btn btn-main" onmouseover="exitidu()" onmouseout="pagetitle()" onclick=load_exitidu()> Exit IDU </button>
-<button class="btn btn-main" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
+<button class="btn" onmouseover="webact()" onmouseout="pagetitle()" onclick=load_webact()> Web-Activator </button>
+<button class="btn" onmouseover="exitidu()" onmouseout="pagetitle()" onclick=load_exitidu()> Exit IDU </button>
+<button class="btn" onmouseover="linux1gb()" onmouseout="pagetitle()" onclick=load_linux1gb()> Linux 1GB </button>
+<button class="btn" onmouseover="linux3gb()" onmouseout="pagetitle()" onclick=load_linux3gb()> Linux 3GB </button>
+<br>
+<button class="btn" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
 <button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>&nbsp
-<hr style="margin-top: 62px;">
-<h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;"></style>ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/_AlAzif" style="color:#f31414;">@_AlAzif</a>&nbsp&nbsp<a style="color:white;"></style>And to all the people who keep the scene alive day after day</a>&nbsp&nbsp</h1>
+<hr style="margin-top: 24px;">
+<h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;">ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/_AlAzif" style="color:#f31414;">@_AlAzif</a>&nbsp&nbsp<a style="color:white;">And to all the people who keep the scene alive day after day</a></h1>
 <br>
 </div>
 <script>
@@ -122,12 +102,9 @@ function mainpayload1(){
 document.getElementById("msgs").innerHTML = "GoldHEN v1.1 for All Firmwares 7.5x (Includes Temporary Fix for CE-30391-6)";
 }
 function mainpayload2(){
-document.getElementById("msgs").innerHTML = "HEN v2.1.3b for All Firmwares 7.5x";
-}
-function mainpayload3(){
 document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
 }
-function mainpayload4(){
+function mainpayload3(){
 document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9021";
 }
 function todex(){
@@ -184,6 +161,12 @@ document.getElementById("msgs").innerHTML = "Activate Your User Account from the
 function exitidu(){
 document.getElementById("msgs").innerHTML = "Disable IDU Mode, if you have activated it by mistake";
 }
+function linux1gb(){
+document.getElementById("msgs").innerHTML = "Load Linux with 1GB VRAM";
+}
+function linux3gb(){
+document.getElementById("msgs").innerHTML = "Load Linux with 3GB VRAM";
+}
 function webrte(){
 document.getElementById("msgs").innerHTML = "Required to Activate Cheats Through the PS4 Trainer Website";
 }
@@ -191,7 +174,7 @@ function ps4trainer(){
 document.getElementById("msgs").innerHTML = "PS4 Trainer Website (Follow Instructions There)";
 }
 function pagetitle(){
-document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.4 by GamerHack";
+document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.5 by GamerHack";
 }
 
 for(var i=40; i<=79; i++){
@@ -208,13 +191,6 @@ function load_goldhen(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'goldhen.html';
-        link.click();
-}
-function load_henb(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'payload.html#f=hen213b.js';
         link.click();
 }
 function load_mira75x(){
@@ -357,6 +333,20 @@ function load_exitidu(){
         link.href = 'payload.html#f=idu.js';
         link.click();
 }
+function load_linux1gb(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=linux-1gb.js';
+        link.click();
+}
+function load_linux3gb(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=linux-3gb.js';
+        link.click();
+}
 function load_webrte(){
 
   var link = document.createElement('a');
@@ -369,13 +359,6 @@ function load_ps4trainer(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'http://ps4trainer.com/Trainer/index.html';
-        link.click();
-}
-function load_morepls(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'more-plds.html';
         link.click();
 }
 </script>

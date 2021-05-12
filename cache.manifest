@@ -16,7 +16,6 @@ goldhen.html
 goldhen-750.js
 goldhen-751.js
 goldhen-755.js
-hen213b.js
 history-blocker.js
 idu.js
 img.jpg
@@ -25,6 +24,8 @@ int64.js
 jb.js
 kernel-clock.js
 kernel-dumper.js
+linux-1gb.js
+linux-3gb.js
 loader-750.js
 loader-751.js
 loader-755.js
