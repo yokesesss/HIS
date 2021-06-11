@@ -40,6 +40,12 @@ border-radius: 8px;
 .btn:hover {
 background-color: #0058b1;
 }
+.btn-toolbox {
+background-color: #ae2301;
+}
+.btn-toolbox:hover {
+background-color: #d42a01;
+}
 .btn-web {
 background-color: #076300;
 }
@@ -53,7 +59,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 document.cookie = 'kex=1';
 </script>
 </head>
-<h1 id=msgs>PS4 7.50 - 7.55 Host v1.5 by GamerHack</h1>
+<h1 id=msgs>PS4 7.50 - 7.55 Host v1.4 by GamerHack</h1>
 <hr>
 <br>
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
@@ -88,6 +94,7 @@ document.cookie = 'kex=1';
 <button class="btn" onmouseover="linux1gb()" onmouseout="pagetitle()" onclick=load_linux1gb()> Linux 1GB </button>
 <button class="btn" onmouseover="linux3gb()" onmouseout="pagetitle()" onclick=load_linux3gb()> Linux 3GB </button>
 <br>
+<button class="btn btn-toolbox" onmouseover="orbistoolbox()" onmouseout="pagetitle()" onclick=load_toolbox()> Orbis-Toolbox </button>
 <button class="btn" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
 <button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>&nbsp
 <hr style="margin-top: 24px;">
@@ -164,6 +171,9 @@ document.getElementById("msgs").innerHTML = "Load Linux with 1GB VRAM";
 function linux3gb(){
 document.getElementById("msgs").innerHTML = "Load Linux with 3GB VRAM";
 }
+function orbistoolbox(){
+document.getElementById("msgs").innerHTML = "Orbis ToolBox Alpha Build 1167 for Firmware 7.55";
+}
 function webrte(){
 document.getElementById("msgs").innerHTML = "Required to Activate Cheats Through the PS4 Trainer Website";
 }
@@ -171,7 +181,7 @@ function ps4trainer(){
 document.getElementById("msgs").innerHTML = "PS4 Trainer Website (Follow Instructions There)";
 }
 function pagetitle(){
-document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.5 by GamerHack";
+document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.4 by GamerHack";
 }
 
 for(var i=40; i<=79; i++){
@@ -344,6 +354,13 @@ function load_linux3gb(){
         link.href = 'payload.html#f=linux-3gb.js';
         link.click();
 }
+function load_toolbox(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=Orbis-Toolbox-755.js';
+        link.click();
+}
 function load_webrte(){
 
   var link = document.createElement('a');
@@ -356,7 +373,7 @@ function load_ps4trainer(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'http://ps4trainer.com/Trainer/index.html';
-	link.target = "blank";
+        link.target = "blank";
         link.click();
 }
 </script>
