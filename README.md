@@ -1,6 +1,6 @@
 # ps4jb750-755
 
-PS4 Jailbreak for the firmwares 7.50, 7.51 and 5.55
+PS4 Jailbreak for the firmwares 7.50, 7.51 and 7.55
 
 ## Steps
 
