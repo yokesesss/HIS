@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest"><head>
-<title>PS4 7.50 - 7.55 Host v1.4 by GamerHack</title>
+<title>PS4 7.50 - 7.55 Host v1.5 by GamerHack</title>
 <style>
 html, body {
 background-image: url('img.jpg');
@@ -59,7 +59,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 document.cookie = 'kex=1';
 </script>
 </head>
-<h1 id=msgs>PS4 7.50 - 7.55 Host v1.4 by GamerHack</h1>
+<h1 id=msgs>PS4 7.50 - 7.55 Host v1.5 by GamerHack</h1>
 <hr>
 <br>
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
@@ -99,7 +99,6 @@ document.cookie = 'kex=1';
 <button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>&nbsp
 <hr style="margin-top: 24px;">
 <h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;">ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/_AlAzif" style="color:#f31414;">@_AlAzif</a>&nbsp&nbsp<a style="color:white;">And to all the people who keep the scene alive day after day</a></h1>
-<br>
 </div>
 <script>
 function mainpayload1(){
@@ -181,7 +180,7 @@ function ps4trainer(){
 document.getElementById("msgs").innerHTML = "PS4 Trainer Website (Follow Instructions There)";
 }
 function pagetitle(){
-document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.4 by GamerHack";
+document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.5 by GamerHack";
 }
 
 for(var i=40; i<=79; i++){
@@ -373,8 +372,13 @@ function load_ps4trainer(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'http://ps4trainer.com/Trainer/index.html';
-        link.target = "blank";
+		link.target = "blank";
         link.click();
+}
+
+var jailbreak_start_date = localStorage.getItem("jailbreak_start_date");
+if (jailbreak_start_date !== null) {
+  localStorage.removeItem("jailbreak_start_date");
 }
 </script>
 </body>

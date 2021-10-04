@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# v1.4
+# v1.5
 
 app2usb.js
 app-dumper.js
@@ -26,9 +26,6 @@ kernel-clock.js
 kernel-dumper.js
 linux-1gb.js
 linux-3gb.js
-loader-750.js
-loader-751.js
-loader-755.js
 mira.js
 mira-75x.html
 mira-750.js
